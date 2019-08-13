@@ -1,0 +1,20 @@
+#TO RUN IN BLAZEMETER
+# provisioning: cloud
+
+execution:
+  - scenario: 
+      script: PATH_TO_JMX_FILE
+      variables:
+        password: ${PASSWORD}
+        userName: ${USERNAME}
+        BASE_URL_1: ${BASE_URL_1}
+    concurrency: 
+      local: 40
+      cloud: 40
+    ramp-up: 5m
+    hold-for: 15m
+    locations: 
+      us-west-1: 1
+  
+
+  
