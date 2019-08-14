@@ -5,5 +5,4 @@ settings:
     # API key for blazemeter (not needed locally)
     # API_KEY: ${TAURUS_API_KEY}
     # API_SECRET: ${TAURUS_API_SECRET}
-    #TEST ENV#
     BASE_URL_1: ${AUTO_UAT_ENV_URL}
